@@ -27,7 +27,7 @@ export const bountiesData: Bounty[] = [
     sponsor: "Humyn Labs & KGeN",
     platform: "X / Twitter Thread",
     prize: "Featured Content",
-    date: "Sep 2026",
+    date: "Jul 2026",
     description: "Deep dive thread & video breakdown exploring why Physical AI requires multi-sensory data (sight, sound, motion, touch) and how verified human data networks solve robotics bottlenecks.",
     tags: ["PhysicalAI", "AIxWeb3", "Robotics", "KGeN", "HumynLabs"],
     links: {
