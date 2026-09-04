@@ -75,10 +75,12 @@ export default function BountyVault() {
                 <span>💎</span> {item.prize}
               </p>
 
-              {/* Catchy Hook Snippet */}
-              <div className="bg-[#021122]/90 border-l-4 border-sky-400 p-4 rounded-r-2xl mb-4 text-sky-200 text-sm font-medium italic shadow-inner">
-                &ldquo;By 2030, the most dangerous thing on the internet won't be a hacker. It'll be a robot training the next AI on the output of the last AI.&rdquo;
-              </div>
+              {/* Dynamic Catchy Hook Snippet */}
+              {item.hookQuote && (
+                <div className="bg-[#021122]/90 border-l-4 border-sky-400 p-4 rounded-r-2xl mb-4 text-sky-200 text-sm font-medium italic shadow-inner">
+                  &ldquo;{item.hookQuote}&rdquo;
+                </div>
+              )}
 
               {/* Description */}
               <p className="text-sky-100/70 text-sm leading-relaxed mb-5">
