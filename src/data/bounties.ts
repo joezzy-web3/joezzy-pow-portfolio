@@ -50,5 +50,8 @@ export const bountiesData: Bounty[] = [
     links: {
       github: "https://github.com/joezzy-web3",
     },
+    media: {
+      videoUrl: "/videos/render-network.mp4",
+    },
   },
 ];
