@@ -35,23 +35,23 @@ export default function Home() {
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 font-mono text-[11px] font-bold shadow-[0_0_15px_rgba(56,189,248,0.2)]">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-              OCEANIC WEB3 ARCHITECT
+              BUILDER & CREATOR | CRYPTO • RWA • AI
             </div>
             <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white drop-shadow-[0_0_25px_rgba(56,189,248,0.4)]">
               Joezzy<span className="text-sky-400">.</span>
             </h1>
             <p className="text-sky-100/80 text-sm md:text-base max-w-xl leading-relaxed">
-              Diving deep into Sui Move smart contracts, GPU-driven 3D rendering on Render Network, and decentralized apps.
+              Building Sui Move smart contracts & AI apps while documenting the journey through video breakdown showcases, technical threads, and deep dives.
             </p>
           </div>
 
-          {/* Profile Card */}
+          {/* Profile Card with Direct GitHub Avatar */}
           <div className="flex items-center gap-4 bg-[#021122]/80 border border-sky-400/30 p-3.5 pr-6 rounded-2xl shadow-xl backdrop-blur-md">
-            <div className="relative">
+            <div className="relative w-12 h-12 flex-shrink-0">
               <img
                 src="https://github.com/joezzy-web3.png"
-                alt="joezzy-web3"
-                className="w-12 h-12 rounded-xl border-2 border-sky-400 object-cover shadow-md"
+                alt="joezzy-web3 profile"
+                className="w-12 h-12 rounded-xl border-2 border-sky-400 object-cover shadow-md bg-[#031d33]"
               />
               <span className="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-sky-400 border-2 border-[#010610] rounded-full animate-pulse" />
             </div>
