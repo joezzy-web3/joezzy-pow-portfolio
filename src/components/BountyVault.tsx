@@ -25,7 +25,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "💎 Featured Content",
     description: "Deep dive thread & video breakdown exploring why Physical AI requires multi-sensory data (sight, sound, motion, touch) and how verified human data networks solve robotics bottlenecks.",
     mediaType: "video",
-    mediaSrc: "/videos/pfp-bg.mp4",
+    mediaSrc: "/videos/physical-ai.mp4",
     tags: ["#PhysicalAI", "#AIxWeb3", "#Robotics", "#KGeN", "#HumynLabs"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -37,7 +37,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "🚀 Verified Breakdown",
     description: "Analyzing synthetic data feedback loops and how KGeN VeriFi's decentralized reputation and data integrity protocol prevents AI model degradation.",
     mediaType: "image",
-    mediaSrc: "/images/testimonial-icon.png",
+    mediaSrc: "/images/onelastchance.jpg",
     tags: ["#ModelCollapse", "#SyntheticData", "#VeriFi", "#AI"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -49,7 +49,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "⚡ Compute Pipeline",
     description: "Optimizing decentralized 3D scene rendering nodes and distributed compute workloads using the Render Network architecture.",
     mediaType: "video",
-    mediaSrc: "/videos/pfp-bg.mp4",
+    mediaSrc: "/videos/render-network-video.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -119,6 +119,7 @@ export default function BountyVault() {
             <div className="relative rounded-2xl overflow-hidden border border-sky-500/30 bg-black aspect-video shadow-[0_0_20px_rgba(56,189,248,0.1)] flex items-center justify-center">
               {item.mediaType === "video" ? (
                 <video
+                  key={item.mediaSrc}
                   autoPlay
                   loop
                   muted
