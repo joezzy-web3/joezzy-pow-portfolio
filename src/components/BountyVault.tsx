@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 
 interface BountyItem {
   id: string;
@@ -14,7 +13,7 @@ interface BountyItem {
   tags: string[];
   postUrl: string;
   githubUrl?: string;
-  featured?: boolean;
+  highlightWords?: string[];
 }
 
 const BOUNTY_ITEMS: BountyItem[] = [
@@ -25,10 +24,9 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "Sep 2026",
     badge: "💎 Featured Content",
     description: "Deep dive thread & video breakdown exploring why Physical AI requires multi-sensory data (sight, sound, motion, touch) and how verified human data networks solve robotics bottlenecks.",
-    videoSrc: "/videos/pfp-bg.mp4",
+    videoSrc: "/videos/physical-ai.mp4",
     tags: ["#PhysicalAI", "#AIxWeb3", "#Robotics", "#KGeN", "#HumynLabs"],
     postUrl: "https://x.com/joezzyweb3",
-    featured: true,
   },
   {
     id: "2",
@@ -37,7 +35,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "May 2026",
     badge: "🚀 Verified Breakdown",
     description: "Analyzing synthetic data feedback loops and how KGeN VeriFi's decentralized reputation and data integrity protocol prevents AI model degradation.",
-    videoSrc: "/videos/pfp-bg.mp4",
+    videoSrc: "/videos/model-collapse.mp4",
     tags: ["#ModelCollapse", "#SyntheticData", "#VeriFi", "#AI"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -48,7 +46,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "Aug 2026",
     badge: "⚡ Compute Pipeline",
     description: "Optimizing decentralized 3D scene rendering nodes and distributed compute workloads using the Render Network architecture.",
-    videoSrc: "/videos/pfp-bg.mp4",
+    videoSrc: "/videos/render-gpu.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -102,8 +100,10 @@ export default function BountyVault() {
           >
             <div className="space-y-3">
               <div className="flex justify-between items-center text-xs font-mono">
-                <span className="text-sky-400/70">{item.badge}</span>
-                <span className="text-sky-400/50">{item.date}</span>
+                <span className="px-3 py-1 rounded-full bg-sky-500/10 border border-sky-400/30 text-sky-300 font-bold">
+                  {item.badge}
+                </span>
+                <span className="text-sky-400/60">{item.date}</span>
               </div>
 
               <h3 className="text-xl font-bold text-white leading-snug">
@@ -115,8 +115,9 @@ export default function BountyVault() {
               </p>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden border border-sky-500/30 bg-black aspect-video">
+            <div className="relative rounded-2xl overflow-hidden border border-sky-500/30 bg-black aspect-video shadow-[0_0_20px_rgba(56,189,248,0.1)]">
               <video
+                key={item.videoSrc}
                 autoPlay
                 loop
                 muted
@@ -125,6 +126,7 @@ export default function BountyVault() {
                 className="w-full h-full object-cover"
               >
                 <source src={item.videoSrc} type="video/mp4" />
+                <source src="/videos/pfp-bg.mp4" type="video/mp4" />
               </video>
             </div>
 
@@ -144,7 +146,7 @@ export default function BountyVault() {
                 href={item.postUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center py-2.5 rounded-xl bg-sky-500/10 border border-sky-400/30 text-sky-300 hover:text-white font-mono text-xs font-bold hover:bg-sky-500/20 transition-all"
+                className="block text-center py-2.5 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 text-black font-black font-mono text-xs uppercase tracking-wider shadow-lg shadow-sky-500/20 hover:scale-[1.01] transition-all"
               >
                 View Post ↗
               </a>
