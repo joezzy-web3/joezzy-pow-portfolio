@@ -2,6 +2,7 @@
 
 import React from "react";
 import BountyVault from "../components/BountyVault";
+import CvSlider from "../components/CvSlider";
 
 export default function Home() {
   return (
@@ -98,6 +99,9 @@ export default function Home() {
             </div>
           </div>
         </header>
+
+        {/* Interactive CV Slider Section (Placed right where your red lines pointed!) */}
+        <CvSlider />
 
         {/* Bounty Vault Section */}
         <BountyVault />
