@@ -25,7 +25,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "🧠 Deep Dive & BRIDGE Benchmark",
     description: "Every AI metric you trust has been quietly lying through incomplete data. Introducing BRIDGE by Humyn Labs—an independent speech-recognition benchmark built for the Global South testing 15 models across 22 languages, code-switching, and verified human intelligence via KGeN.",
     mediaType: "video",
-    mediaSrc: "/videos/4th content.mp4",
+    mediaSrc: "/videos/fourth-content.mp4",
     tags: ["#HumynLabs", "#KGeN", "#BRIDGE", "#AI", "#Web3", "#CodeSwitching"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -61,7 +61,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "⚡ Compute Pipeline",
     description: "Optimizing decentralized 3D scene rendering nodes and distributed compute workloads using the Render Network architecture.",
     mediaType: "video",
-    mediaSrc: "/videos/render network video.mp4",
+    mediaSrc: "/videos/render-network-video.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -137,9 +137,11 @@ export default function BountyVault() {
                   muted
                   playsInline
                   controls
+                  preload="auto"
                   className="w-full h-full object-cover"
                 >
                   <source src={item.mediaSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
                 </video>
               ) : (
                 <div className="relative w-full h-full">
