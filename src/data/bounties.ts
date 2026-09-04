@@ -37,4 +37,18 @@ export const bountiesData: Bounty[] = [
       videoUrl: "/videos/physical-ai.mp4",
     },
   },
+  {
+    id: "render-network-3d",
+    title: "Decentralized GPU Rendering on Render Network",
+    category: "3D / Render",
+    sponsor: "Render Network",
+    platform: "Ecosystem Bounty",
+    prize: "Verified Submission",
+    date: "Aug 2026",
+    description: "GPU-driven 3D scene rendering and decentralized compute pipeline optimization leveraging the Render Network infrastructure.",
+    tags: ["RenderNetwork", "GPU", "3D", "DecentralizedCompute"],
+    links: {
+      github: "https://github.com/joezzy-web3",
+    },
+  },
 ];
