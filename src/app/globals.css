@@ -9,12 +9,10 @@
   }
 }
 
-/* Ocean caustics lighting layer */
 .ocean-bg {
   background: radial-gradient(circle at 50% 0%, #0c3859 0%, #031726 50%, #010a12 100%);
 }
 
-/* Rising Bubbles Keyframes */
 @keyframes rise {
   0% {
     bottom: -10px;
@@ -40,7 +38,6 @@
   animation: rise 8s infinite ease-in-out;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
