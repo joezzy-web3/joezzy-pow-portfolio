@@ -1,53 +1,40 @@
 export interface Bounty {
   id: string;
   title: string;
-  platform: string;
+  category: "3D / Render" | "Smart Contracts" | "AI x Web3" | "Content & Media" | "Full Stack";
   sponsor: string;
+  platform: string;
   prize: string;
-  category: "Smart Contracts" | "Frontend" | "Full Stack" | "AI x Web3" | "3D / Render";
   date: string;
   description: string;
   tags: string[];
-  media?: {
-    videoUrl?: string;
-  };
   links: {
-    demo?: string;
     github?: string;
     tweet?: string;
+    demo?: string;
+  };
+  media?: {
+    videoUrl?: string;
+    imageUrl?: string;
   };
 }
 
 export const bountiesData: Bounty[] = [
   {
-    id: "render-network-bounty",
-    title: "Render Network Video Showcase",
-    platform: "Render Network",
-    sponsor: "Render Foundation",
-    prize: "Bounty Winner 🏆",
-    category: "3D / Render",
-    date: "Aug 2026",
-    description: "High-impact 3D video submission highlighting decentralized GPU rendering, spatial computing, and Web3 media production workflows.",
-    tags: ["Render Network", "GPU", "3D Motion", "Web3 Content"],
+    id: "physical-ai-sensory-data",
+    title: "Physical AI & Multi-Sensory Data Breakdowns",
+    category: "Content & Media",
+    sponsor: "Humyn Labs & KGeN",
+    platform: "X / Twitter Thread",
+    prize: "Featured Content",
+    date: "Sep 2026",
+    description: "Deep dive thread & video breakdown exploring why Physical AI requires multi-sensory data (sight, sound, motion, touch) and how verified human data networks solve robotics bottlenecks.",
+    tags: ["PhysicalAI", "AIxWeb3", "Robotics", "KGeN", "HumynLabs"],
+    links: {
+      tweet: "https://x.com/joezzyweb3/status/2081897500206649464?s=20",
+    },
     media: {
-      videoUrl: "/videos/render-network.mp4",
-    },
-    links: {
-      tweet: "https://x.com/joezzyweb3/status/2046194374246060085",
-    },
-  },
-  {
-    id: "sui-move-bounty",
-    title: "Sui Move Dynamic Token Module",
-    platform: "Sui Developer Ecosystem",
-    sponsor: "Sui Foundation",
-    prize: "1st Place — $3,000",
-    category: "Smart Contracts",
-    date: "Aug 2026",
-    description: "Built custom Move modules implementing TreasuryCap token creation and burning mechanisms for decentralized asset management.",
-    tags: ["Sui Move", "Smart Contracts", "DeFi", "CLI"],
-    links: {
-      github: "https://github.com/joezzy-web3",
+      videoUrl: "/videos/physical-ai.mp4",
     },
   },
 ];
