@@ -27,7 +27,7 @@ export const bountiesData: Bounty[] = [
     sponsor: "KGeN",
     platform: "X / Twitter Article",
     prize: "Featured Article",
-    date: "Aug 2026",
+    date: "May 2026",
     description: "Deep dive into how training AI on synthetic data and bot-poisoned gaming pools creates model collapse, and how KGeN's VeriFi uses on-chain identity and behavioral proofs to secure authentic human anchor data.",
     tags: ["AIxWeb3", "ModelCollapse", "KGeN", "VeriFi", "DataIntegrity"],
     links: {
