@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface BountyItem {
   id: string;
@@ -9,11 +10,10 @@ interface BountyItem {
   date: string;
   badge: string;
   description: string;
-  videoSrc: string;
+  mediaType: "video" | "image";
+  mediaSrc: string;
   tags: string[];
   postUrl: string;
-  githubUrl?: string;
-  highlightWords?: string[];
 }
 
 const BOUNTY_ITEMS: BountyItem[] = [
@@ -24,7 +24,8 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "Sep 2026",
     badge: "💎 Featured Content",
     description: "Deep dive thread & video breakdown exploring why Physical AI requires multi-sensory data (sight, sound, motion, touch) and how verified human data networks solve robotics bottlenecks.",
-    videoSrc: "/videos/physical-ai.mp4",
+    mediaType: "video",
+    mediaSrc: "/videos/pfp-bg.mp4",
     tags: ["#PhysicalAI", "#AIxWeb3", "#Robotics", "#KGeN", "#HumynLabs"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -35,7 +36,8 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "May 2026",
     badge: "🚀 Verified Breakdown",
     description: "Analyzing synthetic data feedback loops and how KGeN VeriFi's decentralized reputation and data integrity protocol prevents AI model degradation.",
-    videoSrc: "/videos/model-collapse.mp4",
+    mediaType: "image",
+    mediaSrc: "/images/testimonial-icon.png",
     tags: ["#ModelCollapse", "#SyntheticData", "#VeriFi", "#AI"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -46,7 +48,8 @@ const BOUNTY_ITEMS: BountyItem[] = [
     date: "Aug 2026",
     badge: "⚡ Compute Pipeline",
     description: "Optimizing decentralized 3D scene rendering nodes and distributed compute workloads using the Render Network architecture.",
-    videoSrc: "/videos/render-gpu.mp4",
+    mediaType: "video",
+    mediaSrc: "/videos/pfp-bg.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
     postUrl: "https://x.com/joezzyweb3",
   },
@@ -63,7 +66,6 @@ export default function BountyVault() {
 
   return (
     <div className="space-y-8 w-full">
-      {/* Section Header & Filters */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight">
@@ -91,7 +93,6 @@ export default function BountyVault() {
         </div>
       </div>
 
-      {/* Grid of Bounties */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filteredItems.map((item) => (
           <div
@@ -115,19 +116,28 @@ export default function BountyVault() {
               </p>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden border border-sky-500/30 bg-black aspect-video shadow-[0_0_20px_rgba(56,189,248,0.1)]">
-              <video
-                key={item.videoSrc}
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-                className="w-full h-full object-cover"
-              >
-                <source src={item.videoSrc} type="video/mp4" />
-                <source src="/videos/pfp-bg.mp4" type="video/mp4" />
-              </video>
+            <div className="relative rounded-2xl overflow-hidden border border-sky-500/30 bg-black aspect-video shadow-[0_0_20px_rgba(56,189,248,0.1)] flex items-center justify-center">
+              {item.mediaType === "video" ? (
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                  className="w-full h-full object-cover"
+                >
+                  <source src={item.mediaSrc} type="video/mp4" />
+                </video>
+              ) : (
+                <div className="relative w-full h-full">
+                  <Image
+                    src={item.mediaSrc}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
             </div>
 
             <div className="flex flex-wrap gap-1.5 pt-2">
