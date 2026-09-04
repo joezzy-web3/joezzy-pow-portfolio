@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Review {
   id: string;
@@ -61,8 +62,16 @@ export default function ReviewsPage() {
         
         {/* Header & Back Button */}
         <div className="flex justify-between items-center glass-panel p-5 rounded-2xl">
-          <h1 className="text-2xl md:text-3xl font-black text-white flex items-center gap-2">
-            <span>💬</span> Peer Reviews & Feedback
+          <h1 className="text-2xl md:text-3xl font-black text-white flex items-center gap-3">
+            <div className="relative w-9 h-9 flex-shrink-0 rounded-xl overflow-hidden border border-sky-400/40 bg-[#031d33] flex items-center justify-center shadow-[0_0_10px_rgba(56,189,248,0.3)]">
+              <Image
+                src="/images/review-icon.png"
+                alt="Review Icon"
+                fill
+                className="object-cover"
+              />
+            </div>
+            Peer Reviews & Feedback
           </h1>
           <Link href="/" className="px-4 py-2 rounded-xl bg-sky-500/10 border border-sky-400/30 text-sky-300 hover:text-white font-mono text-xs font-bold transition-all">
             ← Back to Vault
