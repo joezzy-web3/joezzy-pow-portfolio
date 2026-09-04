@@ -49,6 +49,7 @@ export const bountiesData: Bounty[] = [
     tags: ["RenderNetwork", "GPU", "3D", "DecentralizedCompute"],
     links: {
       github: "https://github.com/joezzy-web3",
+      tweet: "https://x.com/joezzyweb3/status/2046194374246060085?s=20",
     },
     media: {
       videoUrl: "/videos/render-network.mp4",
