@@ -19,6 +19,18 @@ interface BountyItem {
 const BOUNTY_ITEMS: BountyItem[] = [
   {
     id: "1",
+    title: "Every AI Metric is Lying: BRIDGE & Verified Human Data",
+    category: "AI x Web3",
+    date: "Sep 2026",
+    badge: "🧠 Deep Dive & BRIDGE Benchmark",
+    description: "Every AI metric you trust has been quietly lying through incomplete data. Introducing BRIDGE by Humyn Labs—an independent speech-recognition benchmark built for the Global South testing 15 models across 22 languages, code-switching, and verified human intelligence via KGeN.",
+    mediaType: "video",
+    mediaSrc: "/videos/4th content.mp4",
+    tags: ["#HumynLabs", "#KGeN", "#BRIDGE", "#AI", "#Web3", "#CodeSwitching"],
+    postUrl: "https://x.com/joezzyweb3",
+  },
+  {
+    id: "2",
     title: "Physical AI & Multi-Sensory Data Breakdowns",
     category: "AI x Web3",
     date: "Sep 2026",
@@ -30,7 +42,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     postUrl: "https://x.com/joezzyweb3",
   },
   {
-    id: "2",
+    id: "3",
     title: "Model Collapse, Synthetic Data, & KGeN VeriFi",
     category: "AI x Web3",
     date: "May 2026",
@@ -42,7 +54,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     postUrl: "https://x.com/joezzyweb3",
   },
   {
-    id: "3",
+    id: "4",
     title: "Decentralized GPU Rendering on Render Network",
     category: "3D / Render",
     date: "Aug 2026",
