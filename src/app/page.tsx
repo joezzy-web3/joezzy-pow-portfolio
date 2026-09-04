@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import BountyVault from "@/components/BountyVault";
+import BountyVault from "../components/BountyVault";
 
 export default function Home() {
   return (
