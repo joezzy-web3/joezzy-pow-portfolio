@@ -21,6 +21,23 @@ export interface Bounty {
 
 export const bountiesData: Bounty[] = [
   {
+    id: "model-collapse-kgen-verifi",
+    title: "Model Collapse, Synthetic Data, & KGeN VeriFi",
+    category: "Content & Media",
+    sponsor: "KGeN",
+    platform: "X / Twitter Article",
+    prize: "Featured Article",
+    date: "Aug 2026",
+    description: "Deep dive into how training AI on synthetic data and bot-poisoned gaming pools creates model collapse, and how KGeN's VeriFi uses on-chain identity and behavioral proofs to secure authentic human anchor data.",
+    tags: ["AIxWeb3", "ModelCollapse", "KGeN", "VeriFi", "DataIntegrity"],
+    links: {
+      tweet: "https://x.com/joezzyweb3/status/2059542040950530241?s=20",
+    },
+    media: {
+      imageUrl: "/images/onelastchance.jpg",
+    },
+  },
+  {
     id: "physical-ai-sensory-data",
     title: "Physical AI & Multi-Sensory Data Breakdowns",
     category: "Content & Media",
