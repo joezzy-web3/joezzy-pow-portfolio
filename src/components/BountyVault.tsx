@@ -27,7 +27,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     mediaType: "video",
     mediaSrc: "/videos/fourth-content.mp4",
     tags: ["#HumynLabs", "#KGeN", "#BRIDGE", "#AI", "#Web3", "#CodeSwitching"],
-    postUrl: "https://x.com/joezzyweb3",
+    postUrl: "https://x.com/joezzyweb3/status/2075524965823094806?s=20",
   },
   {
     id: "2",
@@ -39,7 +39,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     mediaType: "video",
     mediaSrc: "/videos/physical-ai.mp4",
     tags: ["#PhysicalAI", "#AIxWeb3", "#Robotics", "#KGeN", "#HumynLabs"],
-    postUrl: "https://x.com/joezzyweb3",
+    postUrl: "https://x.com/joezzyweb3/status/2081897500206649464?s=20",
   },
   {
     id: "3",
@@ -51,7 +51,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     mediaType: "image",
     mediaSrc: "/images/onelastchance.jpg",
     tags: ["#ModelCollapse", "#SyntheticData", "#VeriFi", "#AI"],
-    postUrl: "https://x.com/joezzyweb3",
+    postUrl: "https://x.com/joezzyweb3/status/2059542040950530241?s=20",
   },
   {
     id: "4",
@@ -63,7 +63,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     mediaType: "video",
     mediaSrc: "/videos/render-network-video.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
-    postUrl: "https://x.com/joezzyweb3",
+    postUrl: "https://x.com/joezzyweb3/status/2046194374246060085?s=20",
   },
 ];
 
