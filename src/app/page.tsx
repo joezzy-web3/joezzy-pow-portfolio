@@ -2,12 +2,15 @@
 
 import React from "react";
 import BountyVault from "../components/BountyVault";
-import CvSlider from "../components/CvSlider";
+import MenuDrawer from "../components/MenuDrawer";
 
 export default function Home() {
   return (
     <main className="min-h-screen text-gray-100 p-4 md:p-10 flex flex-col items-center relative overflow-hidden bg-[#010610]">
       
+      {/* Menu Drawer & Top-Right Stacked Dash Button */}
+      <MenuDrawer />
+
       {/* High-Resolution Deep Sea Diver Background */}
       <div 
         className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-40 pointer-events-none z-0"
@@ -99,9 +102,6 @@ export default function Home() {
             </div>
           </div>
         </header>
-
-        {/* Interactive CV Slider Section (Placed right where your red lines pointed!) */}
-        <CvSlider />
 
         {/* Bounty Vault Section */}
         <BountyVault />
