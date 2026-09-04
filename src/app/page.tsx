@@ -45,11 +45,11 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Profile Card with Direct GitHub Avatar */}
+          {/* Profile Card with Local Profile Picture */}
           <div className="flex items-center gap-4 bg-[#021122]/80 border border-sky-400/30 p-3.5 pr-6 rounded-2xl shadow-xl backdrop-blur-md">
             <div className="relative w-12 h-12 flex-shrink-0">
               <img
-                src="https://github.com/joezzy-web3.png"
+                src="/images/pfp.jpg"
                 alt="joezzy-web3 profile"
                 className="w-12 h-12 rounded-xl border-2 border-sky-400 object-cover shadow-md bg-[#031d33]"
               />
