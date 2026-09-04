@@ -15,7 +15,6 @@ export default function BountyVault() {
 
   return (
     <section className="w-full max-w-5xl mx-auto py-10 px-4">
-      {/* Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4 border-b border-gray-800 pb-6">
         <div>
           <span className="text-amber-500 font-mono text-xs tracking-widest uppercase font-bold">
@@ -26,7 +25,6 @@ export default function BountyVault() {
           </h2>
         </div>
 
-        {/* Filters */}
         <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button
@@ -44,7 +42,6 @@ export default function BountyVault() {
         </div>
       </div>
 
-      {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filteredBounties.map((item) => (
           <div
@@ -72,7 +69,6 @@ export default function BountyVault() {
                 {item.description}
               </p>
 
-              {/* Local Video Player Integration */}
               {item.media?.videoUrl && (
                 <div className="w-full rounded-xl overflow-hidden border border-gray-800 bg-black my-3">
                   <video
@@ -98,7 +94,6 @@ export default function BountyVault() {
               </div>
             </div>
 
-            {/* Links */}
             <div className="flex items-center gap-3 pt-4 border-t border-gray-800/80 text-xs">
               {item.links.tweet && (
                 <a
