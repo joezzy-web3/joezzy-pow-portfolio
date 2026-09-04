@@ -49,7 +49,7 @@ const BOUNTY_ITEMS: BountyItem[] = [
     badge: "⚡ Compute Pipeline",
     description: "Optimizing decentralized 3D scene rendering nodes and distributed compute workloads using the Render Network architecture.",
     mediaType: "video",
-    mediaSrc: "/videos/render-network-video.mp4",
+    mediaSrc: "/videos/render network video.mp4",
     tags: ["#RenderNetwork", "#GPU", "#3D", "#DecentralizedCompute"],
     postUrl: "https://x.com/joezzyweb3",
   },
