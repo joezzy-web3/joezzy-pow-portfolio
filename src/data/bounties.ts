@@ -48,7 +48,6 @@ export const bountiesData: Bounty[] = [
     description: "GPU-driven 3D scene rendering and decentralized compute pipeline optimization leveraging the Render Network infrastructure.",
     tags: ["RenderNetwork", "GPU", "3D", "DecentralizedCompute"],
     links: {
-      github: "https://github.com/joezzy-web3",
       tweet: "https://x.com/joezzyweb3/status/2046194374246060085?s=20",
     },
     media: {
